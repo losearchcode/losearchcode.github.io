@@ -11,13 +11,19 @@
 <meta property="og:url" content="https://blog.ershixiong.top/2025-10-13/%E3%80%90HEXO%E7%AF%87%E3%80%91Hexo+Github%20Pages%20%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="LosearchCodeの小站">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.ershixiong.top/ports_source/CreateMyBlog/images/%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93.png">
+<meta property="og:image" content="https://blog.ershixiong.top/ports_source/CreateMyBlog/images/%E5%9F%9F%E5%90%8DDNS%E8%A7%A3%E6%9E%90_1.png">
+<meta property="og:image" content="https://blog.ershixiong.top/ports_source/CreateMyBlog/images/%E5%9F%9F%E5%90%8DDNS%E8%A7%A3%E6%9E%90_2.png">
+<meta property="og:image" content="https://blog.ershixiong.top/ports_source/CreateMyBlog/images/Github_Pages_HTTPS_Setting.png">
+<meta property="og:image" content="https://blog.ershixiong.top/ports_source/CreateMyBlog/images/CloudFlare_%E9%A2%9D%E5%A4%96%E8%AE%BE%E7%BD%AE.png">
 <meta property="article:published_time" content="2025-10-13T13:17:25.000Z">
-<meta property="article:modified_time" content="2025-10-14T08:35:20.353Z">
+<meta property="article:modified_time" content="2025-10-14T08:57:27.305Z">
 <meta property="article:author" content="LosearchCode">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Skill">
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.ershixiong.top/ports_source/CreateMyBlog/images/%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93.png">
   
     <link rel="alternate" href="/atom.xml" title="LosearchCodeの小站" type="application/atom+xml">
   
@@ -150,8 +156,7 @@
 <li>勾选 “Initialize this repository with a README”</li>
 <li>点击创建仓库。</li>
 </ol>
-<img class="url&#x3D;&#x2F;ports_source&#x2F;【HEXO篇】Hexo+GithubPages个人博客搭建&#x2F;images&#x2F;配置仓库.png title&#x3D;配置仓库">
-
+<p><img src="/ports_source/CreateMyBlog/images/%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93.png" alt="配置仓库"></p>
 <h1 id="4-安装-Hexo-博客程序"><a href="#4-安装-Hexo-博客程序" class="headerlink" title="4. 安装 Hexo 博客程序"></a>4. 安装 Hexo 博客程序</h1><p>新建一个文件夹，用于存放 Hexo 博客程序。</p>
 <h2 id="4-1-安装-Hexo"><a href="#4-1-安装-Hexo" class="headerlink" title="4.1 安装 Hexo"></a>4.1 安装 Hexo</h2><p>打开命令行，进入该文件夹，执行以下命令安装 Hexo：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g  </span><br><span class="line"><span class="comment"># 务必带上 -g 参数进行全局安装, -g 参数表示全局安装，这样 hexo-cli 命令可以在系统的任何目录下使用</span></span><br></pre></td></tr></table></figure>
@@ -178,23 +183,18 @@
 <p>这里使用的是 <a target="_blank" rel="noopener" href="https://www.namesilo.com/">namesilo</a> 域名注册商(主要便宜且可用支付宝支付)，其他域名注册商配置类似。</p>
 <h2 id="6-1-域名注册和解析"><a href="#6-1-域名注册和解析" class="headerlink" title="6.1 域名注册和解析"></a>6.1 域名注册和解析</h2><p><del>namesilo 域名使用 Cloudflare 服务进行解析教程。（挖个坑，等我有时间再填。）</del></p>
 <p>在 namesilo 的 DNS 设置部分，删除自带的记录，然后添加 CNAME 记录将 www 域名解析指向 用户名.github.io。</p>
-<img class="url&#x3D;&#x2F;ports_source&#x2F;【HEXO篇】Hexo+GithubPages个人博客搭建&#x2F;images&#x2F;域名DNS解析_1.png title&#x3D;域名DNS解析_1">
-
-<img class="url&#x3D;&#x2F;ports_source&#x2F;【HEXO篇】Hexo+GithubPages个人博客搭建&#x2F;images&#x2F;域名DNS解析_2.png title&#x3D;域名DNS解析_2">
-
+<p><img src="/ports_source/CreateMyBlog/images/%E5%9F%9F%E5%90%8DDNS%E8%A7%A3%E6%9E%90_1.png" alt="域名DNS解析_1"></p>
+<p><img src="/ports_source/CreateMyBlog/images/%E5%9F%9F%E5%90%8DDNS%E8%A7%A3%E6%9E%90_2.png" alt="域名DNS解析_2"></p>
 <h2 id="6-2-绑定域名到-Hexo-博客"><a href="#6-2-绑定域名到-Hexo-博客" class="headerlink" title="6.2 绑定域名到 Hexo 博客"></a>6.2 绑定域名到 Hexo 博客</h2><p>进入本地博客文件夹的 source 目录，打开记事本，里面输入自己的域名，如 <a target="_blank" rel="noopener" href="http://www.example.com/">http://www.example.com</a> ，保存名称为 “CNAME”，格式为 “所有文件”（无 .txt 后缀）。</p>
 <p>清除缓存等文件并重新发布网站：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean   <span class="comment"># 清除缓存文件等</span></span><br><span class="line">hexo g       <span class="comment"># 生成页面</span></span><br><span class="line">hexo s       <span class="comment"># 启动预览</span></span><br></pre></td></tr></table></figure>
 
 <p>现在就可以使用自己的域名访问 Hexo 博客了。</p>
 <h2 id="6-3-开启-GitHub-Pages-HTTPS"><a href="#6-3-开启-GitHub-Pages-HTTPS" class="headerlink" title="6.3 开启 GitHub Pages HTTPS"></a>6.3 开启 GitHub Pages HTTPS</h2><p>打开 GitHub Pages 仓库的 Settings 页面，输入你自己的自定义域名，找到 “Enforce HTTPS” 选项，将其勾选上。</p>
-<img class="url&#x3D;&#x2F;ports_source&#x2F;【HEXO篇】Hexo+GithubPages个人博客搭建&#x2F;images&#x2F;Github_Pages_HTTPS_Setting.png title&#x3D;Github_Pages_HTTPS_Setting">
-
+<p><img src="/ports_source/CreateMyBlog/images/Github_Pages_HTTPS_Setting.png" alt="Github_Pages_HTTPS_Setting"></p>
 <p>HTTPS 证书部署成功需要一定时间，等大概几分钟再访问域名，就可以看到域名下方由DNS Check in Progress 变成了 DNS Check in Success。表明HTTPS 配置完成！</p>
 <p><strong>Tips</strong>: 若你采用的是Cloudflare DNS 服务，在GitHub Pages 仓库的 Settings 页面中 Enforce HTTPS 选项大概率是灰色不可选的；需要在 DNS 配置中添加 HTTPS 证书后，需要将代理状态设置为 “仅代理” 后才可选择。</p>
-<img class="url&#x3D;&#x2F;ports_source&#x2F;【HEXO篇】Hexo+GithubPages个人博客搭建&#x2F;images&#x2F;CloudFlare_额外设置.png title&#x3D;CloudFlare_额外设置">
-
-
+<p><img src="/ports_source/CreateMyBlog/images/CloudFlare_%E9%A2%9D%E5%A4%96%E8%AE%BE%E7%BD%AE.png" alt="CloudFlare_额外设置"></p>
 <h1 id="7-开始使用"><a href="#7-开始使用" class="headerlink" title="7. 开始使用"></a>7. 开始使用</h1><h2 id="7-1-发布文章"><a href="#7-1-发布文章" class="headerlink" title="7.1 发布文章"></a>7.1 发布文章</h2><p>首先区分Post（正式文章）和Page（页面）。</p>
 <p>Post 是正式发布的文章，会显示在博客的文章列表中。</p>
 <p>Page 是独立的页面，不会显示在文章列表中，通常用于展示个人介绍、项目展示等。</p>
@@ -243,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.ershixiong.top/2025-10-13/%E3%80%90HEXO%E7%AF%87%E3%80%91Hexo+Github%20Pages%20%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="cmgqbfymx0001x0v0cvq98rlx" data-title="【HEXO篇】Hexo + Github Pages 个人博客搭建" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://blog.ershixiong.top/2025-10-13/%E3%80%90HEXO%E7%AF%87%E3%80%91Hexo+Github%20Pages%20%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="cmgqbx7ft00026gv03lpncju5" data-title="【HEXO篇】Hexo + Github Pages 个人博客搭建" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
