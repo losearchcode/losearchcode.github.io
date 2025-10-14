@@ -22,7 +22,7 @@
 
   
 
-  <title>【HEXO篇】flex-block _config.yml配置(备份) | LosearchCodeの小站</title>
+  <title>【HEXO篇】flex-block front-matter配置(备份) | LosearchCodeの小站</title>
 
   
 
@@ -101,16 +101,16 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">【HEXO篇】flex-block _config.yml配置(备份)</h1>
+          <h1 class="title-wrap">【HEXO篇】flex-block front-matter配置(备份)</h1>
           <h2 class="title-sub-wrap">
             <strong>LosearchCode</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2025-10-13T06:17:25.000Z" itemprop="datePublished">2025-10-13</time>
+            <time  class="article-date" datetime="2025-10-13T06:15:28.000Z" itemprop="datePublished">2025-10-13</time>
           </h2>
           
             <h2 class="last-time">
               <span>最后更新于</span>
-              <time  class="article-updated" datetime="2025-10-14T06:54:25.334Z" itemprop="dateUpdated">2025-10-14</time>
+              <time  class="article-updated" datetime="2025-10-14T06:32:12.968Z" itemprop="dateUpdated">2025-10-14</time>
             </h2>
           
           
@@ -143,79 +143,54 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <!-- 摘要在 flexblock 主题中失去效果 -->
-
-<span id="more"></span>
-
-<p>一份完整的_config.yml文件如下:</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Header</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="string">首页:</span> <span class="string">/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 主页banner图</span></span><br><span class="line"><span class="attr">banner:</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># 站点通知信息</span></span><br><span class="line"><span class="attr">notice:</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># 作者信息</span></span><br><span class="line"><span class="attr">author:</span></span><br><span class="line">  <span class="attr">name:</span> </span><br><span class="line">  <span class="attr">avatar:</span> </span><br><span class="line">  <span class="attr">description:</span> </span><br><span class="line"></span><br><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">max_depth:</span> <span class="number">3</span> <span class="comment"># 生成 TOC 的最大深度</span></span><br><span class="line">  <span class="attr">min_depth:</span> <span class="number">2</span> <span class="comment"># 生成 TOC 的最小深度</span></span><br><span class="line"></span><br><span class="line"><span class="attr">comments:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">use:</span> <span class="string">&#x27;valine&#x27;</span> <span class="comment"># valine || disqus</span></span><br><span class="line">  <span class="comment"># valine 评论</span></span><br><span class="line">  <span class="comment"># docs: https://valine.js.org</span></span><br><span class="line">  <span class="comment"># You can get your appid and appkey from https://leancloud.cn</span></span><br><span class="line">  <span class="comment"># 这里appId和appKey一定一定要改成自己的，没有的话去https://leancloud.cn这个网站注册创建一个</span></span><br><span class="line">  <span class="attr">valine:</span></span><br><span class="line">    <span class="attr">appId:</span></span><br><span class="line">    <span class="attr">appKey:</span></span><br><span class="line">    <span class="attr">avatar:</span> <span class="string">mm</span></span><br><span class="line">    <span class="attr">placeholder:</span> <span class="string">随便说点什么叭～</span></span><br><span class="line">    <span class="attr">notify:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">visitor:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">pageSize:</span> <span class="number">10</span></span><br><span class="line">  <span class="comment"># disqus 评论</span></span><br><span class="line">  <span class="comment"># docs: https://disqus.com/</span></span><br><span class="line">  <span class="attr">disqus:</span></span><br><span class="line">    <span class="attr">website:</span></span><br><span class="line">    <span class="attr">error:</span> <span class="string">如果你看不到评论，那么就真的看不到评论</span> <span class="string">w(゜Д゜)w</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># dplayer 视频播放</span></span><br><span class="line"><span class="comment"># docs: http://dplayer.js.org/#/zh-Hans/</span></span><br><span class="line"><span class="attr">dplayer:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">theme:</span> <span class="string">&quot;#b7daff&quot;</span></span><br><span class="line">  <span class="attr">autoplay:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">loop:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">mutex:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># aplayer 音频播放</span></span><br><span class="line"><span class="comment"># docs: https://aplayer.js.org/#/zh-Hans/</span></span><br><span class="line"><span class="attr">aplayer:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">theme:</span> <span class="string">&quot;#b7daff&quot;</span></span><br><span class="line">  <span class="attr">autoplay:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">loop:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">mutex:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">lrcType:</span> <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 国内备案信息</span></span><br><span class="line"><span class="attr">beian:</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># 谷歌分析</span></span><br><span class="line"><span class="attr">google_analytics:</span> <span class="string">UA-165681463-1</span></span><br><span class="line"><span class="comment"># gauges分析</span></span><br><span class="line"><span class="attr">gauges_analytics:</span> </span><br><span class="line"><span class="comment"># 百度分析</span></span><br><span class="line"><span class="attr">baidu_analytics:</span> <span class="string">77cce6624f1114785af5e77d00cbf93c</span></span><br><span class="line"><span class="comment"># 腾讯分析</span></span><br><span class="line"><span class="attr">tencent_analytics:</span> <span class="number">66537616</span></span><br><span class="line"><span class="comment"># 站点ico</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/favicon.ico</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Social Icon</span></span><br><span class="line"><span class="attr">social_icon:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">icons:</span></span><br><span class="line">    <span class="attr">ins     :</span></span><br><span class="line">    <span class="attr">zhihu   :</span></span><br><span class="line">    <span class="attr">weibo   :</span> <span class="string">https://twitter.com/guanquanhong</span></span><br><span class="line">    <span class="attr">github  :</span> <span class="string">https://github.com/miiiku/</span></span><br><span class="line">    <span class="attr">twitter :</span> <span class="string">https://twitter.com/guanquanhong</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="aplayer-音乐播放器"><a href="#aplayer-音乐播放器" class="headerlink" title="aplayer 音乐播放器"></a>aplayer 音乐播放器</h1><p>aplayer相关配置项:</p>
-<p>具体的配置项描述可以查阅aplayer官方文档 <a target="_blank" rel="noopener" href="https://aplayer.js.org/#/zh-Hans/">aplayer文档地址</a></p>
-<p>目前支持的相关参数如下:</p>
+        <p>Front-matter相关的配置内容可以查看官方文档:<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html">front-matter</a></p>
+<p>里面有相关属性的说明，在flex-block中，主要添加如下属性:</p>
 <table>
 <thead>
 <tr>
-<th>key</th>
-<th>default</th>
-<th>describe</th>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>theme</td>
-<td><code>&#39;#b7daff&#39;</code></td>
-<td>主题色</td>
+<td>cover</td>
+<td>string</td>
+<td>封面</td>
 </tr>
 <tr>
-<td>autoplay</td>
-<td><code>false</code></td>
-<td>音频自动播放</td>
+<td>layout</td>
+<td>stirng</td>
+<td>页面类型(只有在page页面下生效)</td>
 </tr>
 <tr>
-<td>loop</td>
-<td><code>&#39;all&#39;</code></td>
-<td>音频循环播放, 可选值: <code>&#39;all&#39;</code>, <code>&#39;one&#39;</code>, <code>&#39;none&#39;</code></td>
+<td>subtitle</td>
+<td>string</td>
+<td>小标题&#x2F;描述(只有在page页面生效)</td>
 </tr>
 <tr>
-<td>mutex</td>
-<td><code>true</code></td>
-<td>互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td>
+<td>toc</td>
+<td>boolean</td>
+<td>是否开启TOC功能(只有在post页面下生效)</td>
+</tr>
+<tr>
+<td>aplayer</td>
+<td>boolean</td>
+<td>是否启用aplayer播放器(只有在post,page页面下生效)</td>
+</tr>
+<tr>
+<td>dplayer</td>
+<td>boolean</td>
+<td>是否启用dplayer播放器(只有在post,page页面下生效)</td>
 </tr>
 </tbody></table>
-<p>dplayer 音乐播放器相关配置项:</p>
-<p>dplayer相关配置项:</p>
-<p>具体的配置项描述可以查阅dplayer官方文档 【dplayer文档地址】(<a target="_blank" rel="noopener" href="https://dplayer.diygod.dev/">https://dplayer.diygod.dev/</a>)</p>
-<p>目前支持的相关参数如下</p>
-<table>
-<thead>
-<tr>
-<th>key</th>
-<th>default</th>
-<th>describe</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>theme</td>
-<td><code>‘#b7daff’</code></td>
-<td>主题色</td>
-</tr>
-<tr>
-<td>autoplay</td>
-<td><code>false</code></td>
-<td>视频自动播放</td>
-</tr>
-<tr>
-<td>loop</td>
-<td><code>false</code></td>
-<td>视频循环播放</td>
-</tr>
-<tr>
-<td>mutex</td>
-<td><code>true</code></td>
-<td>互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td>
-</tr>
-</tbody></table>
-<h1 id="自定义新增social-icon图标"><a href="#自定义新增social-icon图标" class="headerlink" title="自定义新增social_icon图标"></a>自定义新增social_icon图标</h1><p>如添加一个 Google+ 图标，先在 theme&#x2F;layout&#x2F;_svg&#x2F; 下添加 social-google.svg。</p>
-<p>然后编辑 _config.yml 配置文件，在 social_icon 下的 icons 添加 google:[你的地址] 即可。</p>
+<h1 id="end"><a href="#end" class="headerlink" title="end"></a>end</h1><p>其中 layout 细说一下，目前 layout 支持的字段有 messages 和 links ，分别是留言板跟友联页面，如创建一个留言页面:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page message</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 留言板</span><br><span class="line">date: 2025-10-13 14:15:28</span><br><span class="line"><span class="section">layout: messages</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>会在source目录下生成message&#x2F;index.md，编辑index.md，在front-matter中添加layout: messages，这样就添加了一个留言页面。</p>
 
       </section>
 
@@ -230,8 +205,8 @@
     
     <div class="card-text">
       
-        <a href="/2025-10-13/%E3%80%90HEXO%E7%AF%87%E3%80%91flex-block-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%EF%BC%8C%E9%9F%B3%E9%A2%91%E5%92%8C%E8%A7%86%E9%A2%91-%E5%A4%87%E4%BB%BD/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">【HEXO篇】flex-block 插入图片，音频和视频(备份)</h2>
+        <a href="/2025-10-13/%E3%80%90HEXO%E7%AF%87%E3%80%91flex-block%20_config.yml%E9%85%8D%E7%BD%AE%20%E5%A4%87%E4%BB%BD/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">【HEXO篇】flex-block _config.yml配置(备份)</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -239,22 +214,6 @@
   </article>
 </div>
           
-          
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="/ports_source/images/01-49-52-ad7c11385343fbf2c5a5e6a9bc7eca8064388f4b.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2025-10-13/%E3%80%90HEXO%E7%AF%87%E3%80%91flex-block-front-matter%E9%85%8D%E7%BD%AE-%E5%A4%87%E4%BB%BD/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">【HEXO篇】flex-block front-matter配置(备份)</h2>
-        </a>
-      
-      <div class="card-text--row">Older</div>
-    </div>
-  </article>
-</div>
           
         </nav>
       
